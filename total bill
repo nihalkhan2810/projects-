@@ -1,0 +1,20 @@
+print("note:the following software will be executed only 4 times kindly make your order within 4 tries")
+for i in range(0,4):
+    
+    print("""choose your menu
+    a.chicken strips - 3.50$
+    b.french fries - 2.50$
+    c.hamburger - 4.00$
+    d.hotdog - 3.50$
+    e.Large Drink - 1.75$
+    f.Medium Drink - 1.50$
+    g.Milk Shake - 2.25$
+    h.salad - 3.75$
+    i.small drink - 1.25$""")
+    items={'a':3.50,'b':2.50,'c':4.00,'d':3.50,'e':1.75,'f':1.50,'g':2.25,'h':3.75,'i':1.25}
+    n=int(input("enter the number of orders"))
+    s=0
+    for i in range(n):
+        command=input("enter the command :")
+        s=s+items[command]
+    print("the total price is",s,'$')
